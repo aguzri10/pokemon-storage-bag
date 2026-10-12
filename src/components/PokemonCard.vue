@@ -1,5 +1,6 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+// Note: RouterLink will be re-enabled in Milestone 4 when pokemon-detail route is registered
+// import { RouterLink } from 'vue-router'
 
 defineProps({
   pokemon: {
@@ -25,11 +26,7 @@ function handleAction() {
 
 <template>
   <div class="pokemon-card">
-    <RouterLink
-      :to="{ name: 'pokemon-detail', params: { name: pokemon.name } }"
-      class="card-link"
-      :title="`Lihat detail ${pokemon.name}`"
-    >
+    <div class="card-link" :title="`Lihat detail ${pokemon.name}`">
       <div class="sprite-container">
         <img :src="pokemon.sprite" :alt="pokemon.name" class="pokemon-sprite" loading="lazy" />
       </div>
@@ -37,7 +34,7 @@ function handleAction() {
         <span class="pokemon-id">#{{ String(pokemon.id).padStart(3, '0') }}</span>
         <h3 class="pokemon-name">{{ pokemon.name }}</h3>
       </div>
-    </RouterLink>
+    </div>
 
     <div class="card-actions">
       <button

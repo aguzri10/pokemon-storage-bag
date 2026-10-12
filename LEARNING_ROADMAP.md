@@ -55,16 +55,16 @@
 
 ### 🖥️ Milestone 3: Halaman Utama (Storage & Bag View)
 *Fokus: Menggabungkan komponen, computed filtering, dan state Pinia di layar.*
-- [ ] **3.1 Wrapper List Pokémon (`src/components/PokemonList.vue`)**:
-  - [ ] Menerima list dan konfigurasi aksi.
-  - [ ] Menampilkan grid responsif dan empty state jika list kosong.
-- [ ] **3.2 Halaman Utama (`src/views/HomeView.vue`)**:
-  - [ ] Integrasi `usePokemonStore()`.
-  - [ ] Menggunakan `onMounted()` untuk trigger `fetchPokemons()` pertama kali.
-  - [ ] Membuat local state `searchQuery = ref('')`.
-  - [ ] Membuat `computed(() => ...)` untuk memfilter `storage` berdasarkan pencarian nama Pokémon.
-  - [ ] Layout 2 kolom berdampingan di Desktop (Storage di kiri, Bag di kanan) dan stacked di Mobile.
-  - [ ] Menghubungkan event emit kartu ke action store (`moveToBag` & `moveToStorage`).
+- [x] **3.1 Wrapper List Pokémon (`src/components/PokemonList.vue`)**:
+  - [x] Menerima list dan konfigurasi aksi.
+  - [x] Menampilkan grid responsif dan empty state jika list kosong.
+- [x] **3.2 Halaman Utama (`src/views/HomeView.vue`)**:
+  - [x] Integrasi `usePokemonStore()`.
+  - [x] Menggunakan `onMounted()` untuk trigger `fetchPokemons()` pertama kali.
+  - [x] Membuat local state `searchQuery = ref('')`.
+  - [x] Membuat `computed(() => ...)` untuk memfilter `storage` berdasarkan pencarian nama Pokémon.
+  - [x] Layout 2 kolom berdampingan di Desktop (Storage di kiri, Bag di kanan) dan stacked di Mobile.
+  - [x] Menghubungkan event emit kartu ke action store (`moveToBag` & `moveToStorage`).
 
 ---
 
