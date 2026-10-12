@@ -42,14 +42,14 @@
 
 ### 🧩 Milestone 2: Komponen Atomic & Alur Data (Props & Emits)
 *Fokus: Membangun UI blok terkecil yang reusable dengan prinsip "Props Down, Events Up".*
-- [ ] **2.1 Komponen Kartu Pokémon (`src/components/PokemonCard.vue`)**:
-  - [ ] Deklarasi props dengan `defineProps`: `pokemon` (Object), `actionLabel` (String), `actionDisabled` (Boolean).
-  - [ ] Deklarasi emits dengan `defineEmits`: emit `'action'` saat tombol diklik.
-  - [ ] Thumbnail sprite Pokémon dinamis berdasarkan ID.
-  - [ ] Link navigasi ke halaman detail menggunakan named route.
-- [ ] **2.2 Komponen Pencarian (`src/components/SearchInput.vue`)**:
-  - [ ] Implementasi modern two-way binding dengan `defineModel()` (alternatif `v-model`).
-  - [ ] Analogi dengan `TextEditingController` GetX tanpa boilerplate listener.
+- [x] **2.1 Komponen Kartu Pokémon (`src/components/PokemonCard.vue`)**:
+  - [x] Deklarasi props dengan `defineProps`: `pokemon` (Object), `actionLabel` (String), `actionDisabled` (Boolean).
+  - [x] Deklarasi emits dengan `defineEmits`: emit `'action'` saat tombol diklik.
+  - [x] Thumbnail sprite Pokémon dinamis berdasarkan ID.
+  - [x] Link navigasi ke halaman detail menggunakan named route.
+- [x] **2.2 Komponen Pencarian (`src/components/SearchInput.vue`)**:
+  - [x] Implementasi modern two-way binding dengan `defineModel()` (alternatif `v-model`).
+  - [x] Analogi dengan `TextEditingController` GetX tanpa boilerplate listener.
 
 ---
 
