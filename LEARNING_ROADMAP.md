@@ -70,15 +70,15 @@
 
 ### 🔍 Milestone 4: Routing & Halaman Detail Pokémon
 *Fokus: Navigasi SPA, component reuse, dan penanganan lifecycle.*
-- [ ] **4.1 Konfigurasi Vue Router (`src/router/index.js`)**:
-  - [ ] Named route: `home` (`/`), `pokemon-detail` (`/pokemon/:name`), `not-found` (`/:pathMatch(.*)*`).
-- [ ] **4.2 Halaman Detail (`src/views/PokemonDetailView.vue`)**:
-  - [ ] Menampilkan artwork resmi, types, height, weight, abilities, dan base stats.
-  - [ ] Indikator status lokasi Pokémon: apakah sedang di *Bag* atau di *Storage* (menggunakan `computed`).
-  - [ ] Tombol *Previous* dan *Next* Pokémon.
-  - [ ] **Kunci Penilaian**: Implementasi `watch(() => route.params.name, ...)` untuk re-fetch data saat berganti Pokémon tanpa unmount komponen.
-- [ ] **4.3 Halaman 404 Not Found (`src/views/NotFoundView.vue`)**:
-  - [ ] Menampilkan pesan tidak ditemukan dan tombol kembali ke Home.
+- [x] **4.1 Konfigurasi Vue Router (`src/router/index.js`)**:
+  - [x] Named route: `home` (`/`), `pokemon-detail` (`/pokemon/:name`), `not-found` (`/:pathMatch(.*)*`).
+- [x] **4.2 Halaman Detail (`src/views/PokemonDetailView.vue`)**:
+  - [x] Menampilkan artwork resmi, types, height, weight, abilities, dan base stats.
+  - [x] Indikator status lokasi Pokémon: apakah sedang di *Bag* atau di *Storage* (menggunakan `computed`).
+  - [x] Tombol *Previous* dan *Next* Pokémon.
+  - [x] **Kunci Penilaian**: Implementasi `watch(() => route.params.name, ...)` untuk re-fetch data saat berganti Pokémon tanpa unmount komponen.
+- [x] **4.3 Halaman 404 Not Found (`src/views/NotFoundView.vue`)**:
+  - [x] Menampilkan pesan tidak ditemukan dan tombol kembali ke Home.
 
 ---
 
