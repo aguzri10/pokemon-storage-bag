@@ -84,13 +84,13 @@
 
 ### 🎨 Milestone 5: Polish UX, Handling State, & Simulasi Review
 *Fokus: Menguji kelengkapan rubrik, penanganan edge cases, dan pemahaman teknis.*
-- [ ] **5.1 Handling State UI Lengkap**:
-  - [ ] Loading spinner / skeleton saat API sedang dipanggil.
-  - [ ] Error message & tombol coba lagi (Retry).
-  - [ ] Empty state ramah pengguna (Storage kosong, Bag kosong, Pencarian tidak ditemukan).
-- [ ] **5.2 Verifikasi Aturan Mutlak**:
-  - [ ] Kembali dari detail ke Home tidak memicu fetch ulang.
-  - [ ] Pindah halaman tidak mereset isi Bag.
-  - [ ] Batas maksimal Bag 6 Pokémon tidak bisa ditembus.
-- [ ] **5.3 Simulasi Tanya-Jawab Live Review**:
-  - [ ] Tanya-jawab konsep Vue 3 vs GetX (Mental model, reactivity, component reuse).
+- [x] **5.1 Handling State UI Lengkap**:
+  - [x] Loading spinner / skeleton saat API sedang dipanggil.
+  - [x] Error message & tombol coba lagi (Retry).
+  - [x] Empty state ramah pengguna (Storage kosong, Bag kosong, Pencarian tidak ditemukan).
+- [x] **5.2 Verifikasi Aturan Mutlak**:
+  - [x] Kembali dari detail ke Home tidak memicu fetch ulang.
+  - [x] Pindah halaman tidak mereset isi Bag.
+  - [x] Batas maksimal Bag 6 Pokémon tidak bisa ditembus.
+- [x] **5.3 Simulasi Tanya-Jawab Live Review**:
+  - [x] Tanya-jawab konsep Vue 3 vs GetX (Mental model, reactivity, component reuse).

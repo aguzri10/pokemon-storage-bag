@@ -21,7 +21,7 @@ const filteredStorage = computed(() => {
 
 const storageEmptyMessage = computed(() => {
   if (searchQuery.value.trim() && pokemonStore.storage.length > 0) {
-    return `Tidak ada Pokémon yang cocok dengan "${searchQuery.value}".`
+    return 'Pokémon tidak ditemukan.'
   }
   return 'Storage kosong.'
 })
@@ -65,9 +65,9 @@ function handleRetry() {
         </div>
 
         <PokemonList
-          title="Pokémon Storage"
+          title="Storage"
           :pokemons="filteredStorage"
-          :badge-count="`${filteredStorage.length} / ${pokemonStore.storageCount}`"
+          :badge-count="`(${pokemonStore.storageCount})`"
           action-label="Pindahkan ke Bag"
           :action-disabled="pokemonStore.isBagFull"
           :empty-message="storageEmptyMessage"
@@ -83,9 +83,9 @@ function handleRetry() {
         </div>
 
         <PokemonList
-          title="Pokémon Bag"
+          title="Bag"
           :pokemons="pokemonStore.bag"
-          :badge-count="`${pokemonStore.bagCount} / 6`"
+          :badge-count="`(${pokemonStore.bagCount}/6)`"
           action-label="Kembalikan ke Storage"
           :action-disabled="false"
           empty-message="Bag masih kosong (maksimal 6 Pokémon)."
